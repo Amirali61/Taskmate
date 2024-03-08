@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+  <title>Home - Taskmate</title>
+{% endblock title %}
+{% block content %}
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-4">
+        <img src="{% static "images/homepage.jpg" %}" alt="Todolist" class="rounded shadow-sm" width="360" height="250">
+      </div>
+      <div class="col-lg-4">
+        <img src="{% static "images/homepage.jpg" %}" alt="Todolist" class="rounded shadow-sm" width="360" height="250">
+      </div>
+      <div class="col-lg-4">
+        <img src="{% static "images/homepage.jpg" %}" alt="Todolist" class="rounded shadow-sm" width="360" height="250">
+      </div>
+    </div>
+    <div class="row text-center mt-4">
+      <p class="h1 text-primary">Welcome to my first project</p>
+      <p class="h2">This is a todolist app</p>
+      <p class="h5">Enjoy</p>
+      <center><a href="{% url "todolist" %}"><button type="button" class="btn btn-primary btn-lg shadow mt-3">Go to app page</button></a></center>
+    </div>
+  </div>
+{% endblock content %}
